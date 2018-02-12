@@ -1,6 +1,7 @@
 from setuptools import find_packages, setup
 import os
 
+version = '0.1.0'
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
@@ -9,8 +10,8 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-admin-colors',
-    version='0.1',
-    packages=find_packages(),
+    version=version,
+    packages=find_packages(exclude=['tests']),
     include_package_data=True,
     license='MIT License',
     description='Customizable Django admin themes',
@@ -18,6 +19,16 @@ setup(
     url='https://github.com/victorfsf/django-admin-colors',
     author='Victor Ferraz',
     author_email='victorfsf.dev@gmail.com',
+    keywords=[
+        'django',
+        'django-admin',
+        'python3',
+        'python3.6',
+        'colors',
+        'themes',
+        'django-admin-colors',
+        'django-admin-themes'
+    ],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',

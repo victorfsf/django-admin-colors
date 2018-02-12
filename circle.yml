@@ -1,0 +1,13 @@
+machine:
+  python:
+    version: 3.6.4
+
+dependencies:
+  pre:
+    - pip install -r requirements.test.txt
+
+test:
+  override:
+    - make test
+  post:
+    - coveralls

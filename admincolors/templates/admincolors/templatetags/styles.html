@@ -1,9 +1,11 @@
 {% load static %}
+
+{% if theme %}
+<link rel="stylesheet" type="text/css" href="{% static theme %}">
+{% else %}
 <link
     rel="stylesheet"
     type="text/css"
-    href="{% static 'admincolors/css/override.css' %}"
+    href="{% static 'admincolors/css/default.css' %}"
 />
-{% if theme %}
-<link rel="stylesheet" type="text/css" href="{% static theme %}">
 {% endif %}

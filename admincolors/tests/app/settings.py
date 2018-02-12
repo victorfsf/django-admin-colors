@@ -20,7 +20,7 @@ DATABASES = {
     }
 }
 
-ADMIN_THEMES = [
+ADMIN_COLORS = [
     ('Test', 'test.css')
 ]
 

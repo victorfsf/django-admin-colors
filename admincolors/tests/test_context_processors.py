@@ -12,5 +12,8 @@ class TestContextProcessors(TestCase):
     def test_admin_theme(self):
         context = admin_theme(self.request)
         self.assertEqual(context, {
-            'theme': 'test.css'
+            'theme': 'test.css', 'themes': [
+                ('Default', ''),
+                ('Test', 'test.css')
+            ]
         })
