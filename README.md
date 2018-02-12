@@ -57,9 +57,9 @@ TEMPLATES = [
 
 Create a new folder: `BASE_DIR/templates`.
 
-### admin/base_site.html
+#### admin/base_site.html
 
-#### Completely override the `base_site.html` template
+##### Completely override the `base_site.html` template
 
 File: `BASE_DIR/templates/admin/base_site.html`
 
@@ -67,7 +67,7 @@ File: `BASE_DIR/templates/admin/base_site.html`
 {% extends 'admincolors/base_site.html' %}
 ```
 
-#### Alternatively, overwrite the file `admin/base_site.html` yourself
+##### Alternatively, overwrite the file `admin/base_site.html` yourself
 
 File: `BASE_DIR/templates/admin/base_site.html`
 
@@ -104,9 +104,9 @@ File: `BASE_DIR/templates/admin/base_site.html`
 {% endblock %}
 ```
 
-### admin/index.html
+#### admin/index.html
 
-#### Completely override the `index.html` template
+##### Completely override the `index.html` template
 
 File: `BASE_DIR/templates/admin/index.html`
 
@@ -114,7 +114,7 @@ File: `BASE_DIR/templates/admin/index.html`
 {% extends 'admincolors/index.html' %}
 ```
 
-#### Alternatively, overwrite the file `admin/index.html` yourself
+##### Alternatively, overwrite the file `admin/index.html` yourself
 
 File: `BASE_DIR/templates/admin/index.html`
 
@@ -140,14 +140,18 @@ to see the full `index.html` file.
 
 ### Help
 
-See the Django's documentation about:
+See the Django documentation about:
 
 - [Overrinding templates](https://docs.djangoproject.com/en/2.0/howto/overriding-templates/)
 - [The Django admin site](https://docs.djangoproject.com/en/2.0/ref/contrib/admin/)
 
 ## Examples
 
+##### The default django admin look
 ![Default](https://github.com/victorfsf/django-admin-colors/raw/master/screenshots/default.png)
+##### The `Lite` theme
 ![Lite](https://github.com/victorfsf/django-admin-colors/raw/master/screenshots/lite.png)
+##### The `Dark Blue` theme
 ![Dark Blue](https://github.com/victorfsf/django-admin-colors/raw/master/screenshots/darkblue.png)
+##### The `Gray` theme
 ![Gray](https://github.com/victorfsf/django-admin-colors/raw/master/screenshots/gray.png)
