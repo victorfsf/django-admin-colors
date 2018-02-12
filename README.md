@@ -95,6 +95,8 @@ to see the full `base_site.html` file.
 {% colors_scripts %}
 
 {% endblock %}
+
+...
 ```
 
 #### admin/index.html
@@ -118,6 +120,7 @@ to see the full `index.html` file.
 ```html
 {% extends "admin/base_site.html" %}
 {% load admincolors static i18n %}
+
 ...
 
 {% block breadcrumbs %}
