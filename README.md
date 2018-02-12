@@ -143,7 +143,7 @@ to see the full `index.html` file.
 
 To add a custom theme, simply create a `.css file` anywhere in your static files, then add its full path (and the theme's name) to the `ADMIN_COLORS` variable in `settings.py`:
 
-```
+```python
 ADMIN_COLORS = [
     ...,
     ('My Theme', 'path/to/my/theme.css')
