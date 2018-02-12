@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 import os
 
-version = '0.1.0'
+version = '0.1.2'
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
@@ -19,6 +19,7 @@ setup(
     url='https://github.com/victorfsf/django-admin-colors',
     author='Victor Ferraz',
     author_email='victorfsf.dev@gmail.com',
+    zip_safe=False,
     keywords=[
         'django',
         'django-admin',

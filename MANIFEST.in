@@ -1,1 +1,4 @@
 include LICENSE
+include README.rst
+recursive-include admincolors/static *
+recursive-include admincolors/templates *
