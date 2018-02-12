@@ -2,7 +2,6 @@
 
 Customizing the Django Admin's CSS (mostly its colors)
 
-
 ## Installing
 
 ```bash
@@ -71,13 +70,15 @@ File: `BASE_DIR/templates/admin/base_site.html`
 
 File: `BASE_DIR/templates/admin/base_site.html`
 
+PS: Most of the file was ignored,
+[check the Django's repository](`https://github.com/django/django/blob/master/django/contrib/admin/templates/admin/base_site.html`)
+to see the full `base_site.html` file.
+
 ```html
 {% extends "admin/base.html" %}
 {% load admincolors i18n static %}
 
-{% block title %}
-{{ title }} | {{ site_title|default:_('Django site admin') }}
-{% endblock %}
+...
 
 {% block blockbots %}
 {{ block.super }}
@@ -86,15 +87,7 @@ File: `BASE_DIR/templates/admin/base_site.html`
 
 {% endblock %}
 
-{% block branding %}
-<h1 id="site-name">
-    <a href="{% url 'admin:index' %}">
-        {{ site_header|default:_('Django administration') }}
-    </a>
-</h1>
-{% endblock %}
-
-{% block nav-global %}{% endblock %}
+...
 
 {% block footer %}
 {{ block.super }}
@@ -138,7 +131,7 @@ to see the full `index.html` file.
 ...
 ```
 
-### Help
+## Help
 
 See the Django documentation about:
 
