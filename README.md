@@ -71,7 +71,7 @@ File: `BASE_DIR/templates/admin/base_site.html`
 File: `BASE_DIR/templates/admin/base_site.html`
 
 PS: Most of the file was ignored,
-[check the Django's repository](`https://github.com/django/django/blob/master/django/contrib/admin/templates/admin/base_site.html`)
+[check the Django repository](`https://github.com/django/django/blob/master/django/contrib/admin/templates/admin/base_site.html`)
 to see the full `base_site.html` file.
 
 ```html
@@ -112,7 +112,7 @@ File: `BASE_DIR/templates/admin/index.html`
 File: `BASE_DIR/templates/admin/index.html`
 
 PS: Most of the file was ignored,
-[check the Django's repository](`https://github.com/django/django/blob/master/django/contrib/admin/templates/admin/index.html`)
+[check the Django repository](`https://github.com/django/django/blob/master/django/contrib/admin/templates/admin/index.html`)
 to see the full `index.html` file.
 
 ```html
@@ -129,6 +129,17 @@ to see the full `index.html` file.
 {% endblock %}
 
 ...
+```
+
+## Custom themes
+
+To add a custom theme, simply create a `.css file` anywhere in your static files, then add its full path (and the theme's name) to the `ADMIN_COLORS` variable in `settings.py`:
+
+```
+ADMIN_COLORS = [
+    ...,
+    ('My Theme', 'path/to/my/theme.css')
+]
 ```
 
 ## Help
