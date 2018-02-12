@@ -1,0 +1,10 @@
+{% extends "admin/index.html" %}
+{% load admincolors %}
+{% load static %}
+{% load i18n %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+{% colors_breadcrumbs theme themes %}
+</div>
+{% endblock %}

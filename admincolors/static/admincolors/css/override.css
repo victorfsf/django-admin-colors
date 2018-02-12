@@ -1,0 +1,12 @@
+
+div.breadcrumbs {
+    overflow: hidden;
+}
+
+div.breadcrumbs a.active {
+    color: #c4dce8;
+}
+
+.float-right {
+    float: right;
+}

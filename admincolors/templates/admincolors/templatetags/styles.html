@@ -1,0 +1,9 @@
+{% load static %}
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'admincolors/css/override.css' %}"
+/>
+{% if theme %}
+<link rel="stylesheet" type="text/css" href="{% static theme %}">
+{% endif %}

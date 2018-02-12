@@ -1,0 +1,10 @@
+{% if themes %}
+<span class="float-right">
+    {% for name, target in themes %}
+    <a data-toggle="switch-theme" data-target="{{ target }}"
+        {% if theme == target %}class="active"{% else %}href=""{% endif %}>
+        {{ name }}
+    </a> {% if not forloop.last %}/{% endif %}
+    {% endfor %}
+</span>
+{% endif %}

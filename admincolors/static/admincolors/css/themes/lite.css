@@ -1,0 +1,29 @@
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #fff;
+}
+
+#header {
+    background: #79aec8;
+    color: #fff;
+}
+
+#header a:link, #header a:visited {
+    color: #e0f3ff;
+}
+
+div.breadcrumbs {
+    background: #f8f8f8;
+    color: #999;
+}
+
+div.breadcrumbs a {
+    color: #79aec8;
+}
+
+div.breadcrumbs a.active {
+    color: #999;
+}
+
+div.breadcrumbs a:focus, div.breadcrumbs a:hover {
+    color: #999;
+}
