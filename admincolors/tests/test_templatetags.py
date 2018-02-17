@@ -29,11 +29,12 @@ class TestTemplateTags(TestCase):
         )
 
     def test_colors_styles(self):
-        fn_input = ('test', )
-        context = {'theme': fn_input[0]}
+        fn_input = ('test1', [('Test1', 'test1.css'), ('Test2', 'test2.css')])
         self.assertTrue('colors_styles' in register.tags)
         self.assertEqual(
-            colors_styles(*fn_input), context
+            colors_styles(*fn_input), {
+                'theme': fn_input[0], 'themes': fn_input[1]
+            }
         )
 
     def test_breadcrumbs_render(self):
@@ -68,9 +69,14 @@ class TestTemplateTags(TestCase):
     def test_styles_render(self):
         context = {
             'theme': 'test1',
+            'themes': [
+                ('Test1', 'test1.css'),
+                ('Test2', 'test2.css'),
+                ('Test3', 'test3.css')
+            ]
         }
         template = self.engine.from_string(
-            '{% load admincolors %}{% colors_styles theme %}'
+            '{% load admincolors %}{% colors_styles theme themes %}'
         )
         self.assertEqual(
             template.render(context),

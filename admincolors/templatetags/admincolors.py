@@ -17,7 +17,8 @@ def colors_scripts():
 
 
 @register.inclusion_tag('admincolors/templatetags/styles.html')
-def colors_styles(theme):
+def colors_styles(theme, themes):
     return {
+        'themes': themes,
         'theme': theme
     }

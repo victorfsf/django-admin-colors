@@ -1,7 +1,15 @@
 {% load static %}
 
-{% if theme %}
-<link rel="stylesheet" type="text/css" href="{% static theme %}">
+{% if themes|length == 1 %}
+{% for t in themes.values %}
+{% for css in t %}
+<link rel="stylesheet" type="text/css" href="{% static css %}">
+{% endfor %}
+{% endfor %}
+{% elif theme %}
+{% for css in theme %}
+<link rel="stylesheet" type="text/css" href="{% static css %}">
+{% endfor %}
 {% else %}
 <link
     rel="stylesheet"

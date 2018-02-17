@@ -3,7 +3,9 @@
 {% load static %}
 
 {% block breadcrumbs %}
+{% if themes|length > 1 %}
 <div class="breadcrumbs">
 {% colors_breadcrumbs theme themes %}
 </div>
+{% endif %}
 {% endblock %}
