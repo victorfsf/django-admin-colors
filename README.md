@@ -76,10 +76,6 @@ File: `BASE_DIR/templates/admin/base_site.html`
 
 File: `BASE_DIR/templates/admin/base_site.html`
 
-PS: Most of the file was ignored,
-[check the Django repository](`https://github.com/django/django/blob/master/django/contrib/admin/templates/admin/base_site.html`)
-to see the full `base_site.html` file.
-
 ```html
 {% extends "admin/base_site.html" %}
 {% load admincolors %}
