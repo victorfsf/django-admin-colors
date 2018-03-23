@@ -26,6 +26,9 @@ INSTALLED_APPS = [
     'admincolors'
 ]
 
+# Choose a base theme
+# If empty or not set, the first option of ADMIN_COLORS will be chosen
+ADMIN_COLORS_BASE_THEME = 'Gray'
 # These are the "builtin" django-admin-colors themes
 ADMIN_COLORS = [
     ('Default', []),

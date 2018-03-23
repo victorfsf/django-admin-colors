@@ -13,10 +13,14 @@ def admin_theme(request):
             ]
             themes = OrderedDict(theme_list)
             if themes:
+                first = theme_list[0][0]
+                default = getattr(
+                    settings, 'ADMIN_COLORS_BASE_THEME', first
+                )
                 context.update({
                     'themes': themes,
                     'theme': themes.get(
-                        request.COOKIES['theme']
-                    ) if 'theme' in request.COOKIES else theme_list[0]
+                        request.COOKIES.get('theme') or default
+                    ) or themes.get(first)
                 })
     return context
