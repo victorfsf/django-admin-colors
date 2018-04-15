@@ -3,7 +3,6 @@
 [![PyPI version](https://badge.fury.io/py/django-admin-colors.svg)](https://badge.fury.io/py/django-admin-colors)
 [![Build Status](https://circleci.com/gh/victorfsf/django-admin-colors/tree/master.svg?style=shield)](https://circleci.com/gh/victorfsf/django-admin-colors)
 [![Coverage Status](https://coveralls.io/repos/github/victorfsf/django-admin-colors/badge.svg)](https://coveralls.io/github/victorfsf/django-admin-colors)
-[![Code Health](https://landscape.io/github/victorfsf/django-admin-colors/master/landscape.svg?style=flat)](https://landscape.io/github/victorfsf/django-admin-colors/master)
 
 Customizing the Django Admin's CSS (mostly its colors)
 
