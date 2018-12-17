@@ -1,4 +1,4 @@
-django==2.0.2
+django>=2.0.8
 pdbpp==0.9.2
 pytest-cov==2.5.1
 pytest-django==3.1.2
